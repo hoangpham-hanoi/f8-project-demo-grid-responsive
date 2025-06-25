@@ -1,0 +1,288 @@
+/* -- PC -- */
+@media screen and (min-width: 992px) {
+  .header-responsive {
+    display: none;
+  }
+}
+
+/* -- Tablet and Mobile -- */
+@media screen and (max-width: 991px) {
+  /* Common */
+  .btn {
+    min-width: 100px;
+    height: 50px;
+
+    font-size: 1.4rem;
+  }
+  .section-title {
+    font-size: 3.6rem;
+  }
+
+  /* Header */
+  .header-nav,
+  .header-cta {
+    display: none;
+  }
+
+  .header-responsive {
+    margin-left: auto;
+  }
+
+  .toggle-menu svg {
+    color: #696d76;
+    width: 28px;
+    height: 28px;
+
+    visibility: visible;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 00.3);
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+  }
+
+  .menu-drawer {
+    position: fixed;
+    inset: 0 40% 0 0;
+    z-index: 2;
+    padding: 100px 50px;
+    background: #fff;
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+  }
+
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+
+  .nav-responsive {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 60px;
+  }
+
+  .header-nav__link,
+  .header-cta__responsive--log-in,
+  .header-cta__responsive--sign-up {
+    display: block;
+    padding: 10px 0;
+
+    font-size: 2.8rem;
+  }
+
+  .header-cta__responsive {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-cta__responsive--log-in,
+  .header-cta__responsive--sign-up {
+    color: #696d76;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75;
+  }
+
+  /* Hero */
+  .hero {
+    margin-top: 50px;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-left__cta {
+    margin-top: 20px;
+  }
+
+  .hero-right {
+    scale: 0.8;
+    transform-origin: 36% 50%;
+    margin-right: 0;
+  }
+
+  .interest-circle {
+    scale: 0.8;
+    transform-origin: left;
+  }
+
+  /* Works */
+  .works {
+    margin-top: 80px;
+  }
+
+  .works-left__box-message {
+    left: -50px;
+    right: initial;
+  }
+
+  .works-left__box-icon {
+    top: 42px;
+    right: 20px;
+  }
+
+  .works-item {
+    margin-top: 20px;
+  }
+
+  .works-right__title {
+    margin-bottom: 10px;
+  }
+
+  .works-item__desc {
+    margin-top: 8px;
+  }
+
+  /* Payments */
+  .payments {
+    margin-top: 80px;
+  }
+  .payments-left__btn {
+    margin-top: 20px;
+  }
+
+  .payments-right {
+    transform-origin: left;
+    scale: 0.7;
+  }
+
+  /* Transfers */
+  .transfers {
+    margin-top: 80px;
+  }
+
+  .transfers-method {
+    bottom: -128px;
+    right: auto;
+    left: auto;
+  }
+
+  .transfers-left__deco {
+    top: 0;
+    left: 0;
+  }
+
+  /* Clients */
+  .clients {
+    margin-top: 80px;
+  }
+
+  /* blogs */
+  .blog {
+    margin-top: 80px;
+  }
+
+  .blog-list {
+    margin-top: 60px;
+  }
+
+  .blog-item__date {
+    font-size: 1.2rem;
+  }
+
+  .blog-item__title,
+  .blog-item__link {
+    font-size: 1.2rem;
+  }
+
+  /* App */
+  .app {
+    margin-top: 80px;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 60px;
+  }
+
+  .footer-col__address {
+    width: 300px;
+  }
+
+  .footer-form__actions {
+    gap: 6px;
+  }
+
+  .footer-form__input {
+    width: 250px;
+  }
+
+  .footer-contacts {
+    gap: 50px;
+  }
+}
+
+/* -- Tablet -- */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* -- Mobile -- */
+@media screen and (max-width: 767px) {
+  /* Hero */
+  .hero-right {
+    transform-origin: left;
+  }
+
+  .mobile-screen__box-01 {
+    right: -112px;
+    left: initial;
+  }
+
+  .interest-circle {
+    scale: 1;
+  }
+  /* works */
+  .works-left {
+    display: none;
+  }
+
+  /* Payments */
+  .payments-right {
+    display: none;
+  }
+
+  /* Transfers */
+  .transfers-method {
+    bottom: 10px;
+  }
+
+  .transfers-right {
+    margin-top: 40px;
+  }
+
+  /* Clients */
+  .clients-bottom {
+    margin-top: 50px;
+  }
+
+  /* Footer */
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .footer-col__address {
+    width: 400px;
+  }
+
+  .footer-form__actions {
+    gap: 20px;
+  }
+
+  .footer-form__input {
+    width: 270px;
+  }
+}
