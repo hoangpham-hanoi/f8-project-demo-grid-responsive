@@ -320,10 +320,6 @@
   }
 
   .footer-form__actions {
-    gap: 20px;
-  }
-
-  .footer-form__input {
-    width: 270px;
+    gap: 6px;
   }
 }
