@@ -231,6 +231,9 @@
 
 /* -- Mobile -- */
 @media screen and (max-width: 767px) {
+  .container {
+    padding: 10px;
+  }
   /* Hero */
   .hero-right {
     transform-origin: left;
@@ -266,6 +269,24 @@
   /* Clients */
   .clients-bottom {
     margin-top: 50px;
+  }
+
+  /* Blog */
+  .blog-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  /* App */
+  .app {
+    margin-top: 50px;
+    padding: 0px;
+    scale: 0.9;
+  }
+
+  .app__download {
+    scale: 0.6;
   }
 
   /* Footer */
