@@ -935,6 +935,10 @@ a {
   align-items: center;
 }
 
+.clients__key-message {
+  transform: translateX(-20%);
+}
+
 .clients-top__title {
   margin-top: 12px;
 }

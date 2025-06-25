@@ -266,9 +266,17 @@
     margin-top: 40px;
   }
 
+  .transfers-left__deco {
+    display: none;
+  }
+
   /* Clients */
   .clients-bottom {
     margin-top: 50px;
+  }
+
+  .clients-top__desc {
+    width: 100%;
   }
 
   /* Blog */
@@ -276,6 +284,10 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+  }
+
+  .blog-top__desc {
+    width: 100%;
   }
 
   /* App */
@@ -289,6 +301,14 @@
     scale: 0.6;
   }
 
+  .app__desc {
+    width: 100%;
+  }
+
+  .app__key-message {
+    transform: translateX(-20%);
+  }
+
   /* Footer */
   .footer-content {
     display: flex;
@@ -296,7 +316,7 @@
     row-gap: 30px;
   }
   .footer-col__address {
-    width: 400px;
+    width: 100%;
   }
 
   .footer-form__actions {
